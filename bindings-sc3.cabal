@@ -1,0 +1,32 @@
+name:               bindings-sc3
+version:            0.0.0
+synopsis:           Bindings to libscsynth.
+description:        Bindings to libscsynth.
+license:            GPL
+license-file:       LICENSE
+category:           Sound
+copyright:          Copyright (c) Stefan Kersten 2010
+author:             Stefan Kersten <sk@k-hornz.de>
+maintainer:         Stefan Kersten <sk@k-hornz.de>
+stability:          experimental
+homepage:           http://code.haskell.org/~StefanKersten/code/bindings-sc3
+tested-with:        GHC == 6.12
+build-type:         Simple
+cabal-version:      >= 1.6
+
+data-files:
+  README.md
+
+library
+  extensions:       ForeignFunctionInterface
+  exposed-modules:  Bindings.Sound.SC3
+  c-sources:		cbits/helper_functions.c
+  cc-options:		-c99
+  build-depends:    base >= 3 && < 5
+                  , bindings-DSL >= 1.0 && < 1.1
+  frameworks:       Carbon, CoreAudio
+  extra-libraries:  scsynth, stdc++
+
+source-repository head
+  type:             darcs
+  location:         http://code.haskell.org/~StefanKersten/code/bindings-sc3
