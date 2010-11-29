@@ -61,3 +61,9 @@ module Bindings.Sound.SC3 where
 #ccall World_WaitForQuit            , Ptr <World> -> IO ()
 #ccall World_SendPacket             , Ptr <World> -> CInt -> Ptr CChar -> <ReplyFunc> -> IO Bool
 #ccall World_SendPacketWithContext  , Ptr <World> -> CInt -> Ptr CChar -> <ReplyFunc> -> Ptr () -> IO Bool
+
+-- | Haskell print function.
+#callback HaskellPrintFunc , Ptr CChar -> IO ()
+
+-- | Set the global Haskell print function.
+#ccall SetHaskellPrintFunc , <HaskellPrintFunc> -> IO ()
