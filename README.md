@@ -1,20 +1,8 @@
-# `bindings-scsynth`: Bindings to the SuperCollider synthesis server
+# bindings-sc3
 
-## Building on Linux
+**bindings-sc3** is a Haskell library that provides lowlevel bindings to the [SuperCollider][] synthesis engine library `libscsynth`.
 
-## Building on OSX
+For more information please visit the [website][].
 
-Assuming the environment variable `SC` points to the SuperCollider source tree, you can build SC with:
-
-    cd $SC
-    cmake CMakeLists.txt
-    make
-    make install
-
-The bindings can then be built as follows:
-
-    cabal configure --extra-include-dirs=$SC/common/Headers/{common,plugin_interface,server} --extra-lib-dirs=$SC/SuperCollider/
-
-    DYLD_LIBRARY_PATH=$SC/SuperCollider cabal build
-
-    runhaskell Setup.hs install
+[supercollider]: http://supercollider.sourceforge.net
+[website]: http://space.k-hornz.de/software/bindings-sc3
