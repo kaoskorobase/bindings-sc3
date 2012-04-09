@@ -7,6 +7,8 @@ Description:
     Haskell interface, please use the hsc3-process package
     (<http://hackage.haskell.org/package/hsc3-process>).
     .
+    ChangeLog: <https://github.com/kaoskorobase/bindings-sc3/blob/master/ChangeLog.md>
+    .
     In order to build this package, you need to first build the dynamic library
     version of SuperCollider <supercollider.sourceforge.net> by passing
     @-DLIBSCSYNTH=ON@ to @cmake@. Then build this library by passing the
