@@ -12,7 +12,7 @@ version of SuperCollider <supercollider.sourceforge.net> by passing
 of the SuperCollider header files and dynamic library directory to cabal:
 
 @
-    cabal install bindings-sc3 --extra-include-dirs=<SC_SOURCES>/include/{common,plugin_interface,server} --extra-library-dirs=$SC_SOURCES/server/scsynth
+    cabal install bindings-sc3 --extra-include-dirs=$SC_SOURCES/include/{common,plugin_interface} --extra-library-dirs=$SC_SOURCES/server/scsynth
 @
 
 If you copy @libscsynth@ to a system library location, you may omit @--extra-library-dirs@.
