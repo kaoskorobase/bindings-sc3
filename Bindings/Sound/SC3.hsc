@@ -41,6 +41,7 @@ module Bindings.Sound.SC3 where
 	#field mUGensPluginPath                  , CString
 	#field mOutDeviceName                    , CString
 	#field mRestrictedPath                   , CString
+	#field mSharedMemoryID                   , CInt
 #stoptype
 
 #cinline kDefaultWorldOptions , IO (Ptr <struct WorldOptions>)
