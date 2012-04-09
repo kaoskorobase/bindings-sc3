@@ -19,7 +19,7 @@ If you copy @libscsynth@ to a system library location, you may omit @--extra-lib
 License:                GPL
 License-File:           LICENSE
 Category:               FFI, Sound
-Copyright:              Copyright (c) Stefan Kersten 2010
+Copyright:              Copyright (c) Stefan Kersten 2010-2012
 Author:                 Stefan Kersten <sk@k-hornz.de>
 Maintainer:             Stefan Kersten <sk@k-hornz.de>
 Stability:              experimental
