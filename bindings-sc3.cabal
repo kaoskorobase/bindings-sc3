@@ -4,12 +4,13 @@ Synopsis:               Bindings to the SuperCollider synthesis engine library.
 Description:            This library provides low level bindings to the SuperCollider synthesis engine library (@libscsynth@). If you are looking for a higher level Haskell interface, please use the hsc3-process package (<http://hackage.haskell.org/package/hsc3-process>).
 License:                GPL
 License-File:           LICENSE
-Category:               Sound
+Category:               FFI, Sound
 Copyright:              Copyright (c) Stefan Kersten 2010
 Author:                 Stefan Kersten <sk@k-hornz.de>
 Maintainer:             Stefan Kersten <sk@k-hornz.de>
 Stability:              experimental
-Homepage:               http://space.k-hornz.de/software/hsc3-process/
+Homepage:               http://space.k-hornz.de/software/bindings-sc3/
+Bug-Reports:            http://github.com/kaoskorobase/bindings-sc3/issues/
 Tested-With:            GHC == 6.12
 Build-Type:             Simple
 Cabal-Version:          >= 1.6
@@ -27,4 +28,4 @@ Library
 
 Source-Repository head
     Type:               git
-    Location:           git://github.com/kaoskorobase/hsc3-process.git
+    Location:           git://github.com/kaoskorobase/bindings-sc3.git
