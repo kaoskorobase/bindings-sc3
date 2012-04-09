@@ -1,5 +1,5 @@
 Name:                   bindings-sc3
-Version:                0.0.0
+Version:                0.3.0
 Synopsis:               Bindings to the SuperCollider synthesis engine library.
 Description:            This library provides low level bindings to the SuperCollider synthesis engine library (@libscsynth@). If you are looking for a higher level Haskell interface, please use the hsc3-process package (<http://hackage.haskell.org/package/hsc3-process>).
 License:                GPL
