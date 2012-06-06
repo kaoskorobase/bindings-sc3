@@ -11,9 +11,9 @@ Description:
     .
     In order to use this package, you need to build the dynamic library version
     of SuperCollider <supercollider.sourceforge.net> by passing
-    @-DLIBSCSYNTH=ON@ to @cmake@. When linking an executable or running
-    a script with @runhaskell@ you need to link aginst the shared library
-    @libscsynth@.
+    @-DLIBSCSYNTH=ON@ to @cmake@ and put it in a location where it can be found by the
+    linker (e.g. @/usr/local/lib@ on Unix systems, alternatively use the @--extra-lib-dirs@
+    flag of @cabal configure@).
     .
     The required SuperCollider version is 3.5.
 License:                GPL
@@ -35,10 +35,11 @@ Data-Files:
 Library
     Extensions:         ForeignFunctionInterface
     Exposed-Modules:    Bindings.Sound.SC3
-    C-Sources:		    cbits/helper_functions.c
+    C-Sources:		cbits/helper_functions.c
     Build-Depends:      base >= 3 && < 5
                       , bindings-DSL >= 1.0 && < 1.1
     Include-Dirs:       ./include
+    Extra-Libraries:    scsynth
 
 Source-Repository head
     Type:               git
