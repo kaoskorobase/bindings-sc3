@@ -1,3 +1,7 @@
+### v0.4.1
+
+* Deprecate library
+
 ### v0.4.0
 
 * Include SuperCollider API header files in the package
