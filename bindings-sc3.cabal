@@ -33,6 +33,10 @@ Cabal-Version:          >= 1.6
 
 Data-Files:
     README.md
+    include/SC_Export.h
+    include/SC_Reply.h
+    include/SC_Types.h
+    include/SC_WorldOptions.h
 
 Library
     Extensions:         ForeignFunctionInterface
